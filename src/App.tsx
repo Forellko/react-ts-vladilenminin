@@ -1,11 +1,7 @@
 import React from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Hello React</h1>
-    </div>
-  );
+  return <div className="container mx-auto max-w-2xl pt-5">Hello</div>;
 }
 
 export default App;
