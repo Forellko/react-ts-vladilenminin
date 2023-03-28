@@ -23,6 +23,9 @@ export function Product({ product }: ProductProps) {
         {isVisible ? 'Hide' : 'Show'}
       </button>
       {isVisible && <p>{product.description}</p>}
+      <p>
+        Rate: <span className="font-bold">{product.rating.rate}</span>
+      </p>
     </div>
   );
 }
