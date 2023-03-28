@@ -13,12 +13,14 @@ export function Product({ product }: ProductProps) {
       <p>{product.title}</p>
       <span className="font-bold">{product.price}</span>
       <button
-        className="py-2 px-4 border bg-yellow-400"
+        className={`py-2 px-4 border ${
+          isVisible ? 'bg-green-400' : 'bg-yellow-400'
+        }`}
         onClick={() => {
           setIsVisible(!isVisible);
         }}
       >
-        Show Details
+        {isVisible ? 'Hide' : 'Show'}
       </button>
       {isVisible && <p>{product.description}</p>}
     </div>
