@@ -1,4 +1,5 @@
-export const products = [
+import { IProduct } from './../models';
+export const products: IProduct[] = [
   {
     id: 1,
     title: 'Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops',
